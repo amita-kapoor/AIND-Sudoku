@@ -10,15 +10,6 @@ def assign_value(values, box, value):
         assignments.append(values.copy())
     return values
 
-def get_values(values, unit):
-    """Return array of current values for all boxes in given unit
-        Args:
-        values: a dictionary in the form of {'box_name': '123456789', ...}
-        Returns:
-        array containing values of the corresponding to boxes in the given unit
-        """
-    return [values[b] for b in unit]
-
 def naked_twins(values):
     """Eliminate values using the naked twins strategy.
     Args:
